@@ -2,25 +2,24 @@
   width: 70%;
   margin: auto;
   text-align: center;
+  font-family: 'Lobster', cursive;
 }
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
-}
-
 body {
   background-color: #393E46;
+  text-align: center;
+}
+.top, .dice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
 h2 {
-  margin: 30px;
-  font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   color: #4ECCA3;
   font-size: 3rem;
-}
+} 
 
 p {
   font-size: 2rem;
@@ -29,13 +28,18 @@ p {
 }
 
 img {
-  width: 80%;
+  width: 70%;
 }
 
-footer {
-  margin-top: 5%;
+.footer {
+  margin: 30px;
   color: #EEEEEE;
-  text-align: center;
   font-family: 'Indie Flower', cursive;
 
+}
+.reload{
+  background-color: #4ECCA3;
+   font-family: 'Indie Flower', cursive;
+   font-size: larger;
+  
 }

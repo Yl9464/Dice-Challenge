@@ -1,11 +1,13 @@
-const rollBtn = document.getElementById('rollAgain')
-const list = document.getElementById('testList')
+// const rollBtn = document.getElementById('rollAgain')
+// const list = document.getElementById('testList')
 
-rollBtn.addEventListener('click', () => {
-  const newItem = document.createElement('li')
-  newItem.textContent = 'New Entry: ' + (list.children.length +1)
-  list.appendChild(newItem);
-})
+// rollBtn.addEventListener('click', () => {
+//   const newItem = document.createElement('li')
+//   newItem.textContent = 'New Entry: ' + (list.children.length +1)
+//   list.appendChild(newItem);
+// })
+
+
 
 let randomNumber1 = Math.floor(Math.random() * (7 - 1) + 1);
 let randomNumber2 = Math.floor(Math.random() * (7 - 1) + 1);
