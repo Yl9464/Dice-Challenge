@@ -24,15 +24,20 @@ function rollAgain() {
 
   // Determine winner
   if (dice1 > dice2) {
+      document.getElementById("score1").innerHTML = totalScore;
      totalScore += 1;
 
   } else if (dice1 < dice2) {
+      document.getElementById("score2").innerHTML = totalScore;
     totalScore += 1;
   } else {
+     document.getElementById("score1").innerHTML = totalScore;
+    document.getElementById("score2").innerHTML = totalScore;
+
     totalScore += 1;
 
   }
 
   // Show total score
-  document.getElementById("score1").innerHTML = totalScore;
+  //document.getElementById("score1").innerHTML = totalScore;
 }
