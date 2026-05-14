@@ -1,0 +1,5 @@
+
+➡️ score tracking and win history (while loop? counter varble)
+➡️ Play again button
+➡️ Add animations or better UI
+➡️ Turn into multiplayer game
