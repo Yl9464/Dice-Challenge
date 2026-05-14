@@ -31,13 +31,19 @@ function rollAgain() {
       document.getElementById("score2").innerHTML = totalScore;
     totalScore += 1;
   } else {
-     document.getElementById("score1").innerHTML = totalScore;
+    document.getElementById("score1").innerHTML = totalScore;
     document.getElementById("score2").innerHTML = totalScore;
 
     totalScore += 1;
 
   }
+}
 
-  // Show total score
-  //document.getElementById("score1").innerHTML = totalScore;
+function newGame() {
+  document.getElementById("score1").innerHTML = 0;
+  document.getElementById("score2").innerHTML = 0;
+
+  document.querySelector(".img1").setAttribute("src", "images/dice1.png");
+  document.querySelector(".img2").setAttribute("src", "images/dice1.png");
+
 }
