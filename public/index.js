@@ -1,93 +1,42 @@
-// const rollBtn = document.getElementById('rollAgain')
-// const list = document.getElementById('testList')
+let totalScore = 0;
 
-// rollBtn.addEventListener('click', () => {
-//   const newItem = document.createElement('li')
-//   newItem.textContent = 'New Entry: ' + (list.children.length +1)
-//   list.appendChild(newItem);
-// })
-
-
-
-let randomNumber1 = Math.floor(Math.random() * (7 - 1) + 1);
-let randomNumber2 = Math.floor(Math.random() * (7 - 1) + 1);
-console.log(randomNumber1);
-console.log(randomNumber2);
-
-function player1() {
-  for (i = 0; i <= randomNumber1; i++) {
-    if (randomNumber1 === 1) {
-      document
-        .querySelector("img.img1")
-        .setAttribute("src", "images/dice1.png");
-    } else if (randomNumber1 === 2) {
-      document
-        .querySelector("img.img1")
-        .setAttribute("src", "images/dice2.png");
-    } else if (randomNumber1 === 3) {
-      document
-        .querySelector("img.img1")
-        .setAttribute("src", "images/dice3.png");
-    } else if (randomNumber1 === 4) {
-      document
-        .querySelector("img.img1")
-        .setAttribute("src", "images/dice4.png");
-    } else if (randomNumber1 === 5) {
-      document
-        .querySelector("img.img1")
-        .setAttribute("src", "images/dice5.png");
-    } else if (randomNumber1 === 6) {
-      document
-        .querySelector("img.img1")
-        .setAttribute("src", "images/dice6.png");
-    }
-  }
+function player1(dice1) {
+  document
+    .querySelector("img.img1")
+    .setAttribute("src", "images/dice" + dice1 + ".png");
 }
 
-player1();
-
-function player2(i) {
-  for (i = 0; i <= randomNumber1; i++) {
-    if (randomNumber2 === 1) {
-      document
-        .querySelector("img.img2")
-        .setAttribute("src", "images/dice1.png");
-    } else if (randomNumber2 === 2) {
-      document
-        .querySelector("img.img2")
-        .setAttribute("src", "images/dice2.png");
-    } else if (randomNumber2 === 3) {
-      document
-        .querySelector("img.img2")
-        .setAttribute("src", "images/dice3.png");
-    } else if (randomNumber2 === 4) {
-      document
-        .querySelector("img.img2")
-        .setAttribute("src", "images/dice4.png");
-    } else if (randomNumber2 === 5) {
-      document
-        .querySelector("img.img2")
-        .setAttribute("src", "images/dice5.png");
-    } else if (randomNumber2 === 6) {
-      document
-        .querySelector("img.img2")
-        .setAttribute("src", "images/dice6.png");
-    }
-  }
+function player2(dice2) {
+  document
+    .querySelector("img.img2")
+    .setAttribute("src", "images/dice" + dice2 + ".png");
 }
-player2();
 
-function theWinnerIs() {
-  if (randomNumber1 > randomNumber2) {
-    document.querySelector("h2.header").innerHTML = "Player 1 wins!";
-   
+function rollAgain() {
 
-  } else if (randomNumber1 < randomNumber2) {
-    document.querySelector("h2.header").innerHTML = "Player 2 wins!";
-    
-  } else if (randomNumber1 === randomNumber2) {
-    document.querySelector("h2.header").innerHTML = "Its a draw! Refresh page to roll again.";
-    
-  }
+  // Roll new dice values
+  let dice1 = Math.floor(Math.random() * 6) + 1;
+  let dice2 = Math.floor(Math.random() * 6) + 1;
+
+  // Update dice images
+  player1(dice1);
+  player2(dice2);
+
+  // // Determine winner
+  // if (dice1 > dice2) {
+  //   document.querySelector("score1").innerHTML =
+  //   totalScore += 1;
+
+  // } else if (dice1 < dice2) {
+  //   document.querySelector("score2").innerHTML =
+  //     totalScore += 1;
+  // } else {
+  //   document.querySelector("score1").innerHTML =
+  //   totalScore += 1;
+  //   document.querySelector("score2").innerHTML =
+  //   totalScore += 1;
+  // }
+
+  // // Show total score
+  // document.getElementById("score").innerHTML = totalScore;
 }
-theWinnerIs();

@@ -15,20 +15,22 @@
       <div class="dice">
 
       <div class="player1">
-          <p><u>Player 1</u><br>Score: </p>
-         
+          <p><u>Player 1</u><br>Score: <span id="score1">0</span> </p>
+        
           <img class="img1" src="/images/dice1.png">  
       </div>
       <div class="player2">
-          <p><u>Player 2</u><br>Score: </p>
-      
+          <p><u>Player 2</u><br>Score: <span id="score2">0</span> </p>
+    
           <img class="img2" src="images/dice6.png">
         </div>
       </div>
       </div>
       <div class ="footer">
-     <button class="reload" onclick="window.location.reload()">Roll Again!</button>
-   
+     
+     <button id="rollAgain" onclick="rollAgain()">Roll Again!</button>
+     <button onclick="newGame()">New Game!</button>
+    
  </div>
     </div>
 

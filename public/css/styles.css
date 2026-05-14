@@ -14,7 +14,6 @@ body {
   justify-content: center;
 }
 
-
 h2 {
   text-shadow: 5px 0 #232931;
   color: #4ECCA3;
@@ -31,15 +30,17 @@ img {
   width: 70%;
 }
 
-.footer {
-  margin: 30px;
-  color: #EEEEEE;
-  font-family: 'Indie Flower', cursive;
 
-}
-.reload{
+
+.rollAgain{
+  margin-right: 150px;
   background-color: #4ECCA3;
    font-family: 'Indie Flower', cursive;
    font-size: larger;
   
+}
+.newGame{
+  background-color: #4ECCA3;
+   font-family: 'Indie Flower', cursive;
+   font-size: larger;
 }
