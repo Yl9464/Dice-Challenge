@@ -22,21 +22,17 @@ function rollAgain() {
   player1(dice1);
   player2(dice2);
 
-  // // Determine winner
-  // if (dice1 > dice2) {
-  //   document.querySelector("score1").innerHTML =
-  //   totalScore += 1;
+  // Determine winner
+  if (dice1 > dice2) {
+     totalScore += 1;
 
-  // } else if (dice1 < dice2) {
-  //   document.querySelector("score2").innerHTML =
-  //     totalScore += 1;
-  // } else {
-  //   document.querySelector("score1").innerHTML =
-  //   totalScore += 1;
-  //   document.querySelector("score2").innerHTML =
-  //   totalScore += 1;
-  // }
+  } else if (dice1 < dice2) {
+    totalScore += 1;
+  } else {
+    totalScore += 1;
 
-  // // Show total score
-  // document.getElementById("score").innerHTML = totalScore;
+  }
+
+  // Show total score
+  document.getElementById("score1").innerHTML = totalScore;
 }
