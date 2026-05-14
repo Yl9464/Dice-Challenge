@@ -14,14 +14,14 @@ body {
   justify-content: center;
 }
 
-h2 {
+h1 {
   text-shadow: 5px 0 #232931;
   color: #4ECCA3;
-  font-size: 3rem;
+  font-size: 70px;
 } 
 
 p {
-  font-size: 2rem;
+  font-size: 40px;
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
 }
@@ -32,15 +32,22 @@ img {
 
 
 
-.rollAgain{
-  margin-right: 150px;
+.rollAgain{ 
+  margin-top: 20px;
+  margin-right: 75px;
   background-color: #4ECCA3;
-   font-family: 'Indie Flower', cursive;
-   font-size: larger;
+  font-family: 'Indie Flower', cursive;
+  font-size: xx-large;
+  padding: 10px 25px ;
+  border-radius: 20px;
   
 }
 .newGame{
+    margin-top: 20px;
+ margin-right: 10px;
   background-color: #4ECCA3;
-   font-family: 'Indie Flower', cursive;
-   font-size: larger;
+  font-family: 'Indie Flower', cursive;
+  font-size: xx-large;
+  padding: 10px 15px; 
+  border-radius: 20px;
 }
