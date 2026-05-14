@@ -45,5 +45,7 @@ function newGame() {
 
   document.querySelector(".img1").setAttribute("src", "images/dice1.png");
   document.querySelector(".img2").setAttribute("src", "images/dice1.png");
+  
+  confirm("Game Restarted")
 
 }
